@@ -23,6 +23,11 @@ return C;
 
 void ComplexNumber::print()
 {
-cout<<"ComplexNumber: "<<Cn1<<"+"<<Cn2<<endl;
+if(Cn2>0)
+cout<<"ComplexNumber: "<<Cn1<<"+"<<Cn2<<"i"<<endl;
+else if(Cn2==0)
+cout<<"ComplexNumber: "<<Cn1<<endl;
+else if(Cn2<0)
+cout<<"ComplexNumber: "<<Cn1<<Cn2<<"i"<<endl;
 }
 
